@@ -1,1 +1,1 @@
-# roller-coaster-test
+# Technical test: Roller Coaster !
