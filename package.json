@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "Roller Coaster technical test implementation, from Codin Games",
 	"main": "src/index.ts",
-	"type": "module",
 	"scripts": {
 		"test": "npx jest",
 		"start": "npx ts-node src/index.ts"
@@ -28,9 +27,10 @@
 	},
 	"homepage": "https://github.com/qhello/roller-coaster-test#readme",
 	"dependencies": {
-		"lodash": "^4.17.19"
+		"@hapi/joi": "^17.1.1"
 	},
 	"devDependencies": {
+		"@types/hapi__joi": "^17.1.4",
 		"@types/jest": "^26.0.7",
 		"@types/lodash": "^4.14.158",
 		"@typescript-eslint/eslint-plugin": "^3.7.1",
