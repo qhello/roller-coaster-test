@@ -24,15 +24,11 @@ export default (input: string): number | Error => {
 	// Input validated, let's extract our variables
 	const { rideSeats, runByDay, countByGroup } = value
 
-	// console.log({ value })
-
-	let earnings = 0
 	const queue = countByGroup
+	let earnings = 0
 
 	// Now let's run our roller coaster X times
 	for (let runNumber = 0; runNumber < runByDay; runNumber += 1) {
-		// const newQueue = [] // This will be the queue after boarding
-
 		let availableSeats = rideSeats
 		let groupBoarded = 0
 
@@ -51,8 +47,6 @@ export default (input: string): number | Error => {
 
 		// Ride is gone! Update queue
 		queue.push(...queue.splice(0, groupBoarded))
-
-		// console.log({ earnings, runNumber, peopleBoarded, queue })
 	}
 
 	console.timeEnd('Function time')
